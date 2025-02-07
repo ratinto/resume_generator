@@ -32,22 +32,23 @@
 
         <div class="form-group">
           <label for="addressField">Address</label>
-          <textarea id="address Field" placeholder="Enter Address" class="form-control"></textarea>
+          <textarea id="addressField" placeholder="Enter Address" class="form-control"></textarea>
         </div>
 
         <p class="secondary-text mt-3">Important Links</p>
-
-        <div class="form-group">
-          <label for="linkedin">LinkedIn</label>
-          <input type="text" id="linkedin" placeholder="Enter link" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="github">GitHub</label>
-          <input type="text" id="github" placeholder="Enter link" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="instagram">Instagram</label>
-          <input type="text" id="instagram" placeholder="Enter link" class="form-control">
+        <div class="links text-left">
+          <div class="form-group text-left">
+            <label for="linkedin">LinkedIn</label>
+            <input type="text" id="linkedin" placeholder="Enter link" class="form-control">
+          </div>
+          <div class="form-group text-left">
+            <label for="github">GitHub</label>
+            <input type="text" id="github" placeholder="Enter link" class="form-control">
+          </div>
+          <div class="form-group text-left">
+            <label for="ins tagram">Instagram</label>
+            <input type="text" id="instagram" placeholder="Enter link" class="form-control">
+          </div>
         </div>
 
       </div>
@@ -56,8 +57,8 @@
         <h3>Professional info</h3>
 
         <div class="form-group">
-          <label for="">Objective</label>
-          <textarea rows="5" placeholder="Enter here" class="form-control"></textarea>
+          <label for="objectiveField">Objective</label>
+          <textarea rows="5" id="objectiveField" placeholder="Enter here" class="form-control"></textarea>
         </div>
 
         <div class="form-group" id="we">
@@ -83,7 +84,7 @@
       </div>
     </div>
     <div class="container text-center mt-3 ">
-      <button class="btn btn-primary btn-large">Generate Resume</button>
+      <button onclick="generateCv()" class="btn btn-primary btn-large">Generate Resume</button>
     </div>
   </div>
 
@@ -91,12 +92,74 @@
   <div class="container" id="cv-templete">
     <div class="row">
 
-      <div class="col-md-4">
+      <div class="col-md-4 text-center py-5 left-side">
         <!-- left side  -->
+        <img src="send.png" alt="" class="img-fluid myImg">
+        <div class="container">
+          <p id="nameT1">Ritesh Kumar</p>
+          <p id="contactT">+911234r23234</p>
+          <p id="addressT">15/1 map line india</p>
+          <hr>
+
+          <p id="linkedinT"><a href="#">https://Ritehs.com</a></p>
+          <p id="githubT"><a href="#">https://Ritehs.com</a></p>
+          <p id="instagramT"><a href="#">https://Ritehs.com</a></p>
+
+
+        </div>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-8 py-5 right-side ">
         <!-- right side -->
+        <h1 id="nameT2" class="text-center" style="font-weight: 900;">Ritesh Kumar</h1>
+
+        <!-- objective card -->
+        <div class="card mt-4 ">
+          <div class="card-header">
+            <h3>Objective</h3>
+          </div>
+          <div class="card-body">
+            <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem explicabo
+              deserunt eius amet quae animi accusantium neque doloribus a, vero molestiae culpa porro consectetur quod
+              non corporis quaerat ea?</p>
+          </div>
+        </div>
+
+
+        <!-- work Experience -->
+        <div class="card mt-4 ">
+          <div class="card-header">
+            <h3>Work Experience</h3>
+          </div>
+          <div class="card-body">
+            <ul id="weT">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Academic Qualification -->
+        <div class="card mt-4 ">
+          <div class="card-header">
+            <h3>Academic Qualification</h3>
+          </div>
+          <div class="card-body">
+            <ul id="aqT">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container mt-3 text-center">
+          <button onclick="printCv( )" class="btn btn-primary">
+            print cv
+          </button>
+        </div>
       </div>
     </div>
   </div>

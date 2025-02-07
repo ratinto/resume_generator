@@ -1,3 +1,17 @@
 #cv-form{
+    /* display: none;  */
+}
+
+#cv-templete{
     display: none;
+}
+
+.myImg{
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.left-side{
+    background-color:  rgb(160, 160, 211);
 }
