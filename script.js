@@ -106,5 +106,6 @@ function generateCv() {
 
 function printCv() {
   const element = document.getElementById("cv-templete");
-  html2pdf().from(element).save("resume.pdf");
+  let nameField = document.getElementById("nameField").value;
+  html2pdf().from(element).save(`${nameField} Resume.pdf`);
 }
