@@ -101,6 +101,7 @@ function generateCv() {
 
   document.getElementById("cv-form").style.display = "none";
   document.getElementById("cv-templete").style.display = "block";
+  document.getElementById("printcv-container").style.display = "block";
 }
 
 function printCv() {
