@@ -1,8 +1,15 @@
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+
 #cv-form{
     /* display: none;  */
 }
 
 #cv-templete{
+    display: none;
+}
+#printcv-container{
     display: none;
 }
 
@@ -14,4 +21,8 @@
 
 .left-side{
     background-color:  rgb(160, 160, 211);
+}
+.templete-container{
+    display: flex;
+    justify-content: center;
 }
